@@ -1,3 +1,4 @@
+```
 kgreenle-kafka-java-console-sample-topic
 
 java -jar ./build/libs/kafka-java-console-sample-2.0.jar \
@@ -15,6 +16,7 @@ ibmcloud es group kafka-java-console-sample-group
 ibmcloud es group-reset kafka-java-console-sample-group --topic kgreenle-kafka-java-console-sample-topic --mode earliest
 
 ibmcloud es topic-delete kgreenle-kafka-java-console-sample-topic
+```
 
 ---
 
