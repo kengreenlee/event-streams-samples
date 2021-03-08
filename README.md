@@ -1,5 +1,12 @@
 ```
-kgreenle-kafka-java-console-sample-topic
+https://cloud.ibm.com/docs/EventStreams?topic=EventStreams-getting_started
+
+topic:    kgreenle-kafka-java-console-sample-topic
+
+cd event-streams-samples/kafka-java-console-sample
+gradle clean build
+
+ibmcloud es topic-create --name kgreenle-kafka-java-console-sample-topic
 
 java -jar ./build/libs/kafka-java-console-sample-2.0.jar \
 "kafka-2.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093,kafka-0.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093,kafka-1.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093" \
