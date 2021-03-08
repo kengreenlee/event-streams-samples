@@ -60,7 +60,7 @@ import io.confluent.kafka.serializers.KafkaAvroSerializerConfig;
 public class EventStreamsConsoleSample {
 
     private static final String APP_NAME = "kafka-java-console-schema-sample-2.0";
-    private static final String DEFAULT_TOPIC_NAME = "kafka-java-console-schema-sample-topic";
+    private static final String DEFAULT_TOPIC_NAME = "kgreenle-kafka-java-console-schema-sample-topic";
     private static final String ARG_CONSUMER = "-consumer";
     private static final String ARG_PRODUCER_ = "-producer";
     private static final String ARG_TOPIC = "-topic";

@@ -1,3 +1,23 @@
+kgreenle-kafka-java-console-sample-topic
+
+java -jar ./build/libs/kafka-java-console-sample-2.0.jar \
+"kafka-2.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093,kafka-0.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093,kafka-1.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093" \
+lCQ1kHb2vj3pUHAgh0aVfvsvZ55wWUf0FRPRjB_0VRo7 \
+-consumer
+
+java -jar ./build/libs/kafka-java-console-sample-2.0.jar \
+"kafka-2.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093,kafka-0.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093,kafka-1.mh-stwlnszcysqtspdhmqxn-4c201a12d7add7c99d2b22e361c6f175-0000.us-south.containers.appdomain.cloud:9093" \
+lCQ1kHb2vj3pUHAgh0aVfvsvZ55wWUf0FRPRjB_0VRo7 \
+-producer
+
+ibmcloud es group kafka-java-console-sample-group
+
+ibmcloud es group-reset kafka-java-console-sample-group --topic kgreenle-kafka-java-console-sample-topic --mode earliest
+
+ibmcloud es topic-delete kgreenle-kafka-java-console-sample-topic
+
+---
+
 # event-streams-samples
 IBM Event Streams for IBM Cloud is a scalable, distributed, high throughput message bus to unite your on-premise and off-premise cloud technologies. You can wire micro-services together using open protocols, connect stream data to analytics to realize powerful insight and feed event data to multiple applications to react in real time.
 
